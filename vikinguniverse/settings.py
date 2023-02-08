@@ -75,8 +75,11 @@ WSGI_APPLICATION = 'vikinguniverse.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'VikingAssetManag$viking_universe',
+        'USER': 'VikingAssetManag',
+        'PASSWORD': 'P4ssw0rd12345$',
+        'HOST': 'VikingAssetManagement.mysql.pythonanywhere-services.com',
     }
 }
 
