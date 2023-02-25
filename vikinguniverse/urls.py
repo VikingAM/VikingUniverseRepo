@@ -22,4 +22,5 @@ app_name = "vikinguniverse"
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", vikinguniverseViews.landingpage, name="LandingPage"),
+    path('accounts/', include('accounts.urls')),
 ]
